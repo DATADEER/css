@@ -5,7 +5,7 @@
 ## Table of Contents
   
   1. [General Rules] Rules to keep CSS maintainable
-    -
+    - Prefer semantic class names
   2. [CSS](#css)
     - [Formatting](#formatting)
     - [Comments](#comments)
