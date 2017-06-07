@@ -81,7 +81,11 @@ We encourage some combination of OOCSS and BEM for these reasons:
 
   * CSS Trick's [BEM 101](https://css-tricks.com/bem-101/)
   * Harry Roberts' [introduction to BEM](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)
-  
+
+  * Quick Example:
+     * *Block*: The sole root of the component, basic declaration
+     * *Element*: A component part of the Block, declared with two underscores
+     * *Modifier*: A variant or extension of the Block, declared with two hyphens
   
 
 We recommend a variant of BEM with PascalCased “blocks”, which works particularly well when combined with components (e.g. React). Underscores and dashes are still used for modifiers and children.
