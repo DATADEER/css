@@ -1,15 +1,17 @@
 # MINIMAL Fork of Airbnb CSS / Sass Styleguide
 
 ## Table of Contents
-
-  1. [CSS](#css)
+  
+  1. [General Rules] Rules to keep CSS maintainable
+    -
+  2. [CSS](#css)
     - [Formatting](#formatting)
     - [Comments](#comments)
     - [OOCSS and BEM](#oocss-and-bem)
     - [ID Selectors](#id-selectors)
     - [JavaScript hooks](#javascript-hooks)
     - [Border](#border)
-  1. [Sass](#sass)
+  3. [Sass](#sass)
     - [Syntax](#syntax)
     - [Ordering](#ordering-of-property-declarations)
     - [Variables](#variables)
@@ -17,6 +19,8 @@
     - [Extend directive](#extend-directive)
     - [Nested selectors](#nested-selectors)
   1. [Translation](#translation)
+
+## Rules to keep CSS maintainable
 
 ## CSS
 
@@ -81,11 +85,7 @@ We encourage some combination of OOCSS and BEM for these reasons:
 
   * CSS Trick's [BEM 101](https://css-tricks.com/bem-101/)
   * Harry Roberts' [introduction to BEM](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)
-
-  * Quick Example:
-     * *Block*: The sole root of the component, basic declaration
-     * *Element*: A component part of the Block, declared with two underscores
-     * *Modifier*: A variant or extension of the Block, declared with two hyphens
+  
   
 
 We recommend a variant of BEM with PascalCased “blocks”, which works particularly well when combined with components (e.g. React). Underscores and dashes are still used for modifiers and children.
@@ -156,7 +156,7 @@ Use `0` instead of `none` to specify that a style has no border.
   border: 0;
 }
 ```
-
+## SASS PART IS UNDER CONSTRUCTION
 ## Sass
 
 ### Syntax
@@ -243,13 +243,3 @@ When selectors become this long, you're likely writing CSS that is:
 Again: **never nest ID selectors!**
 
 If you must use an ID selector in the first place (and you should really try not to), they should never be nested. If you find yourself doing this, you need to revisit your markup, or figure out why such strong specificity is needed. If you are writing well formed HTML and CSS, you should **never** need to do this.
-
-## Translation
-
-  This style guide is also available in other languages:
-
-  - ![cn](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/China.png) **Chinese (Simplified)**: [Zhangjd/css-style-guide](https://github.com/Zhangjd/css-style-guide)
-  - ![ru](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Russia.png) **Russian**: [Nekorsis/css-style-guide](https://github.com/Nekorsis/css-style-guide)
-  - ![ja](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Japan.png) **Japanese**: [nao215/css-style-guide](https://github.com/nao215/css-style-guide)
-  - ![es](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Spain.png) **Spanish**: [ismamz/guia-de-estilo-css](https://github.com/ismamz/guia-de-estilo-css)
-  - ![PT-BR](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Brazil.png) **Portuguese**: [felipevolpatto/css-style-guide](https://github.com/felipevolpatto/css-style-guide)
