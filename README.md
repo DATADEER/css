@@ -22,6 +22,22 @@
 
 ## Rules to keep CSS maintainable
 
+**Bad**
+
+```html
+<div class="red pull-left pb3">
+<div class="grid row">
+<div class="col-xs-4">
+```
+
+**Good**
+
+```html
+<div class="basket">
+<div class="product">
+<div class="searchResults">
+```
+
 ## CSS
 
 ### Formatting
