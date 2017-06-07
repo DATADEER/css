@@ -1,3 +1,5 @@
+![Imgur](http://i.imgur.com/612VmpR.jpg)
+
 # MINIMAL Fork of Airbnb CSS / Sass Styleguide
 
 ## Table of Contents
@@ -21,6 +23,8 @@
   1. [Translation](#translation)
 
 ## Rules to keep CSS maintainable
+
+### Prefer semantic class names.
 
 **Bad**
 
