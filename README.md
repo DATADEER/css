@@ -1,13 +1,7 @@
-# Airbnb CSS / Sass Styleguide
-
-*A mostly reasonable approach to CSS and Sass*
+# MINIMAL Fork of Airbnb CSS / Sass Styleguide
 
 ## Table of Contents
 
-  1. [Terminology](#terminology)
-    - [Rule Declaration](#rule-declaration)
-    - [Selectors](#selectors)
-    - [Properties](#properties)
   1. [CSS](#css)
     - [Formatting](#formatting)
     - [Comments](#comments)
@@ -24,55 +18,12 @@
     - [Nested selectors](#nested-selectors)
   1. [Translation](#translation)
 
-## Terminology
-
-### Rule declaration
-
-A “rule declaration” is the name given to a selector (or a group of selectors) with an accompanying group of properties. Here's an example:
-
-```css
-.listing {
-  font-size: 18px;
-  line-height: 1.2;
-}
-```
-
-### Selectors
-
-In a rule declaration, “selectors” are the bits that determine which elements in the DOM tree will be styled by the defined properties. Selectors can match HTML elements, as well as an element's class, ID, or any of its attributes. Here are some examples of selectors:
-
-```css
-.my-element-class {
-  /* ... */
-}
-
-[aria-hidden] {
-  /* ... */
-}
-```
-
-### Properties
-
-Finally, properties are what give the selected elements of a rule declaration their style. Properties are key-value pairs, and a rule declaration can contain one or more property declarations. Property declarations look like this:
-
-```css
-/* some selector */ {
-  background: #f1f1f1;
-  color: #333;
-}
-```
-
 ## CSS
 
 ### Formatting
 
-* Use soft tabs (4 spaces) for indentation
-* Prefer dashes over camelCasing in class names.
-  - Underscores and PascalCasing are okay if you are using BEM (see [OOCSS and BEM](#oocss-and-bem) below).
 * Do not use ID selectors (except for changing display propertiess)
 * When using multiple selectors in a rule declaration, give each selector its own line.
-* Put a space before the opening brace `{` in rule declarations
-* In properties, put a space after, but not before, the `:` character.
 * Put closing braces `}` of rule declarations on a new line
 * Put blank lines between rule declarations
 
@@ -107,7 +58,6 @@ Finally, properties are what give the selected elements of a rule declaration th
 
 ### Comments
 
-* Prefer line comments (`//` in Sass-land) to block comments.
 * Prefer comments on their own line. Avoid end-of-line comments.
 * Write detailed comments for code that isn't self-documenting:
   - Uses of z-index
@@ -124,13 +74,15 @@ We encourage some combination of OOCSS and BEM for these reasons:
 
 **OOCSS**, or “Object Oriented CSS”, is an approach for writing CSS that encourages you to think about your stylesheets as a collection of “objects”: reusable, repeatable snippets that can be used independently throughout a website.
 
-  * Nicole Sullivan's [OOCSS wiki](https://github.com/stubbornella/oocss/wiki)
-  * Smashing Magazine's [Introduction to OOCSS](http://www.smashingmagazine.com/2011/12/12/an-introduction-to-object-oriented-css-oocss/)
+  * Nicole Sullivan's [OOCSS wiki](https://github.com/stubbornella/oocss/wiki)(kurz & knapp)
+  * Smashing Magazine's [Introduction to OOCSS](http://www.smashingmagazine.com/2011/12/12/an-introduction-to-object-oriented-css-oocss/)(ausführlich mit Beispielen)
 
 **BEM**, or “Block-Element-Modifier”, is a _naming convention_ for classes in HTML and CSS. It was originally developed by Yandex with large codebases and scalability in mind, and can serve as a solid set of guidelines for implementing OOCSS.
 
   * CSS Trick's [BEM 101](https://css-tricks.com/bem-101/)
   * Harry Roberts' [introduction to BEM](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)
+  
+  
 
 We recommend a variant of BEM with PascalCased “blocks”, which works particularly well when combined with components (e.g. React). Underscores and dashes are still used for modifiers and children.
 
